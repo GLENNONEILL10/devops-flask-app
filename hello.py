@@ -23,7 +23,7 @@ def about():
 
 @app.route("/contact")
 def contact():
-	return "<p>Contact Me At: C23454056@mytudublin.ie</p>"
+	return "<p>Contact Me At: c23454056@mytudublin.ie</p>"
 
 
 if __name__ == "__main__":
