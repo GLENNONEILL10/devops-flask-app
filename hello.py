@@ -7,8 +7,7 @@ def home():
 
 	return '''
 		<p>Hello, World, I am a flask App</p>
-		<p><a href="/about">Go to about page</a></p>
-		<p><a href="/contact">Contact Details</a></p>
+		
 		
 		'''
 
