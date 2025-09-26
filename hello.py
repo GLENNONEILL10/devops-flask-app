@@ -8,10 +8,12 @@ def home():
 	return '''
 		<p>Hello, World, I am a flask App</p>
 		<p><a href="/about">Go to about page</a></p>
+		<p><a href="/contact">Contact Details</a></p>
 		
 		'''
 
-@app.route("/about"):
+@app.route("/about")
+def about():
 
 	return '''
 		<p>This app is running on the flask web framework</p>
@@ -19,6 +21,10 @@ def home():
 		<a href="https://flask.palletsprojects.com/">Flask framework Documentation</a></p>
 	
 		'''
+
+@app.route("/contact")
+def contact():
+	return "<p>Contact Me At: C23454056@mytudublin.ie</p>"
 
 
 if __name__ == "__main__":
