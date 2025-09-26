@@ -1,0 +1,27 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+
+	return '''
+		<p>Hello, World, I am a flask App</p>
+		<p><a href="/about">Go to about page</a></p>
+		
+		'''
+
+@app.route("/about"):
+
+	return '''
+		<p>This app is running on the flask web framework</p>
+		<p>learn more about flask here</p>
+		<a href="https://flask.palletsprojects.com/">Flask framework Documentation</a></p>
+	
+		'''
+
+
+if __name__ == "__main__":
+
+	app.run(host="0.0.0.0",port=5000)
+	
